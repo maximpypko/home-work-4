@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var triangleHeight = +prompt("Введите цифровое значение для высоты треугольника", '0');
+        var triangle = ''; 
+        var triangleLine = ''; 
+
+        if (triangleHeight <= 0) {
+            alert( 'Введите число больше 0.' );
+        } else {
+            for (var i = 0; i < triangleHeight; i++) { 
+                triangleLine += '*';            
+                triangle += triangleLine + '\n'; 
+            }
+        alert( triangle );
+        }
+ 
+    </script>
+</body>
+</html>
